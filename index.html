@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>eric</title>
+  <link rel="icon" href="icon/favicon.ico">
+  <style>
+	body{
+		background-color: #000;
+		}   
+	*{
+		margin:0;
+		box-sizing:border-box;
+	}
+	a{text-decoration:none;color:#ffa500fa}
+	#zk1{
+		min-width:1000px;
+		width:100%;position: relative;
+	    overflow:hidden;
+	}
+	#zk4{
+	position: relative;
+		width:1600px;
+		margin:0 auto;
+		margin-bottom:75px;
+		z-index: 21;
+	}
+	#zk5{
+		width:350px;height:150px;
+		background:url("img/timg .png") no-repeat;
+		background-size:100% 100%;
+	}	
+	#zk6{
+		 position: relative;color:#ebdec2;		
+		 width:1600px;margin:0 auto;
+		 font-size:20px;
+		 z-index: 21;
+	}
+	#zk6>div:first-child{
+		font-size:50px;color:#ffa500;
+		margin-bottom:30px;
+	}
+	#zk8{
+	color:#ffffff;font-size:20px;width:1600px;height:60px;z-index:20;margin:50px auto;position: relative;
+	}
+	#zk8>div:first-child{
+		width:150px;text-align:center;
+		height:50px;line-height:50px;
+		border:1px solid #d232328a;margin-left:50px;
+		-webkit-transition:all 1s linear;
+		-moz-transition:all 1s linear;
+		transition: all 1s linear;
+	}
+	#zk8>div:first-child:hover{
+		background-color: #fb3f15c7;
+	}
+	#zkk1{
+		height:285px;
+		text-align:center;
+		padding-top:180px;
+		z-index:20;
+		position: relative;
+	}
+	#zk9{
+		height: 400px;
+		min-width:1000px;width:100%;
+		background:url("img/9645681f0a.jpg") no-repeat;
+		background-size:100% 400px;
+		z-index:20;
+		position: relative;
+	}
+	#zk10{
+		  font-size:40px;line-height:40px;
+		  color:#536279;z-index:20;position: relative;
+	}
+	#zk12{color:#9a7b68;font-size:20px;
+	}
+	#zk14{min-width:1000px;width:100%;height:400px;
+		  background-image:url('img/5481662d12962.jpg');
+		  background-size:100% 400px;
+		  color:#de7a13;text-align:right;
+		  line-height:6px;font-family:"Arial";
+		  font-size:20px;
+	}
+	#wuyao1{
+		width:100%;
+		padding-right:8%;
+	}
+	#zk14>h1{
+		width:100%;
+		color:#fff;font-size:45px;
+		padding:70px 35% 50px 0;
+	}
+	#zk16{width:60%;height:400px;color:#4bce2c;
+		  font-size:30px;text-align:center;
+		  line-height:40px;-webkit-box-sizing: border-box;padding-top:130px;
+		  -moz-box-sizing: border-box;
+		  box-sizing: border-box;
+		  
+		  }
+	#zk17{min-width:1000px;width:100%;height:400px;
+		  background-image:url('img/F3XO96G7JQ7W1517216855883.jpg');font-family:"华文行楷";
+		  background-size:100% 400px;
+	}
+	
+	#zk18{
+		min-width:1000px;
+		width:100%;height:700px;
+		background:url('img/2Ffooter_bg.png');
+		-webkit-background-size:100% 700px;
+		background-size:100% 700px;
+		background-repeat:no-repeat;
+		background-color:#1e5fd8;
+		  }
+	iframe{position: relative;}
+/*视频播放*/
+
+body>div>div>video{
+	box-sizing: inherit;
+	display: inline-block;
+    vertical-align: baseline;
+	position: absolute;
+    width:100%;
+	}
+	/*人物介绍*/
+	.text>div{position: absolute;}
+	.text1{width:20%;height:700px;background:url('img/wuyao.jpg');background-size:100% 700px;backface-visibility:hidden;}
+	.text2{width:20%;height:700px;background:url('img/yld.jpg');background-size:100% 700px;float:left;backface-visibility:hidden;}
+	.text3{width:20%;height:700px;background:url('img/wuyaowang.jpg');background-size:100% 700px;float:left;backface-visibility:hidden;}
+	.text4{width:20%;height:700px;background:url('img/huolong.jpg');background-size:100% 700px;float:left;backface-visibility:hidden;}
+	.text5{width:20%;height:700px;background:url('img/dypx.jpg');background-size:100% 700px;float:left;backface-visibility:hidden;}
+	.text{float:left;
+		width:20%;height: 700px;
+	}
+	.text1,.text2,.text3,.text4,.text5{
+		-webkit-transition: all 1s linear;
+		-moz-transition: all 1s linear;
+		-o-transition: all 1s linear;
+		transition: all 1s linear;
+		z-index:10;
+	}
+	.text:hover .text1,.text:hover .text2,.text:hover .text3,.text:hover .text4,.text:hover .text5{transform:rotatey(180deg)}
+	.text:hover .text10{transform:rotatey(0deg)}
+	.text10{
+			width:20%;height: 700px;
+			-webkit-transition: all 1s linear;
+			-moz-transition: all 1s linear;
+			-o-transition: all 1s linear;
+			transition: all 1s linear;
+			color:#fff;
+			backface-visibility:hidden;
+			transform:rotateY(-180deg);
+			display:flex;
+			flex-flow:column nowrap;
+			justify-content:space-between;
+			}
+	.text10>video:last-child{width:100%;}
+	.text10>video:first-child{width:100%;transform:rotate(180deg);}
+	.text10>div{
+		width:100%;color:#9cd1ff;
+		line-height:36px;font-size:20px;
+	}
+	  /*************************了解我们***************/
+	.liao{
+		width:138px;
+		height:110px;
+		background-repeat:no-repeat;
+		position: absolute;
+		-webkit-transition: all 1s;
+		-moz-transition: all 0.5s;
+		-ms-transition: all 0.5s;
+		-o-transition: all 0.5s;
+		transition: all 0.5s;
+	}
+	  .liao.left{
+		  background-image: url("img/buttonleft.png");
+	  }
+	.liao.center{
+		background-image: url("img/button-middle.png");
+		left:137px;
+		-webkit-background-size:;
+		background-size:138px 110px;
+	}
+	.liao.right{
+		background-image: url("img/button-right.png");
+		left:274px;
+	}
+	.liao.line{
+		width:199px;
+		background-image: url("img/button-light.png");
+		left:200px;
+		background-position:9px -26px;
+	}
+	  #zkk1>a{
+		  display: inline-block;
+		  width:414px;
+		  height:110px;
+		  margin:0 auto;
+		  position: relative;
+		  transition: all 0.5s;
+	  }
+	.liao.text{
+		position: relative;
+		font-size:30px;
+		line-height:110px;
+		left:138px;
+		color:#000000;
+		text-shadow: 0 0 20px #e6ff42, 0 0 10px #e6ff42;
+	}
+	#zkk1>a:hover .liao.left{
+		background-image: url("img/button-left-hover.png");
+	}
+	#zkk1>a:hover .liao.center{
+		background-image: url("img/button-middle-hover.png");
+	}
+	#zkk1>a:hover .liao.right{
+		background-image: url("img/button-right-hover.png");
+	}
+	#footer{background-color: #000;}
+	#zk26{
+		position:fixed;
+		bottom:150px;right:10px;
+		display: none;
+		z-index: 20;
+	}
+	#zk26>div{
+		position: relative;
+		width:140px;height:40px;
+		font-size:20px;color:#ffffff;
+		line-height:40px;z-index:30;
+		background:url("img/sdfs.png");
+		margin-top: 10px;
+	}
+	#zk26>div>a>div{
+		position: absolute;
+		text-align:center;width:100%;
+		height:40px;color:#ffd993;	
+	}
+	#zk26>div>a>video{
+		display: none;
+	}
+	#zk26>div:hover a>video{
+		display: block;
+	}
+  </style>
+ </head>
+ <body>
+ 	<div id="header"></div>
+	<div id="zk1">
+		<div>
+			<video src="img/video/4.mp4" loop="loop" muted="muted" autoplay="autoplay" playsinline="playsinline"></video>
+			<div id="zk4">
+				<div id="zk5">
+				</div>
+			</div>
+			<div id="zk6">
+				<div>加入我们为希望而战</div>
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;就算是与全世界为敌我<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;依然坚守自己的信念直到永远<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;只要坚持不断的努力世界终会有所改变<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;即使微乎其微也是希望的开始!
+			</div>
+			<div id="zk8">
+				<div>
+					<a href="#">
+						了解我们
+					</a>
+				</div>
+			</div>
+			<div id="zkk1">
+				<a href="#">
+					<div class="liao left"></div>
+					<div class="liao center"></div>
+					<div class="liao right"></div>
+					<div class="liao line"></div>
+					<div class="liao text">了解更多</div>
+				</a>
+			</div>
+		</div>
+		<div id="zk9">
+			<div id="zk10">
+				<br>
+				<br>
+				加入部落
+				<br>
+				让我们一起努力创建希望
+			</div>
+			<div id="zk12">
+				<br>
+				我们是时代的先锋愿意为了美好的未来而牺牲这是我们共同的使命.
+				<br>
+				我们是一群无说畏惧的人,有人说我们是英雄也有人说我们是最后的希望
+				<br>
+				我们都在为一个共同的目标和共同的敌人做出不同的反应和力所能及的事情
+			</div>
+		</div>
+			<div id="zk14">
+				<h1>《陨落·救赎之路》</h1>
+				<div id="wuyao1">
+					诸神已经陨落，危机遍布各地，敌人的实力难以估计，你是否愿意加入抵抗
+				</div>
+			</div >
+		<div id="zk17">
+					<div class="z7" id="zk16">
+						虽然我们分散在各处没有领导没有组织
+						<br>
+						但是我们绝不会是一盘散沙漫无目的游走
+						<br>
+						我们无时无刻不在希望能有一位强大的领导人指挥我们
+						<br>
+						让我们的队伍更加完整
+					</div>
+				</div>
+			<div id="zk18">
+				<div id="wuyao" class='text'>
+					<div class='text1'></div>
+					<div class='text10'>
+						<video src="img/video/1Fstyr.mp4" loop="loop" muted="muted" autoplay="autoplay" playsinline="playsinline"></video>
+						<DIV>克尔苏加德：亡灵法师<br>
+						性格：凶狠 残暴 爱唠叨<br>
+						活动范围：诺森德 冰冠冰川 风暴峭壁<br>
+						历史：<br>	
+						 曾经的人族魔法师，但是由于过分的研究亡灵魔法而被驱逐出来，然后遇到了巫妖王并得以重生。</DIV>
+						<video src="img/video/1Fstyr.mp4" loop="loop" muted="muted" autoplay="autoplay" playsinline="playsinline"></video>
+					</div>
+				</div>
+				<div id="emls" class='text'>
+					<div class='text2'></div>
+					<div class='text10'>
+						<video src="img/video/1Fstyr.mp4" loop="loop" muted="muted" autoplay="autoplay" playsinline="playsinline"></video>
+						<DIV>伊利丹:恶魔猎手<br>
+						性格：傲娇 易怒 <br>
+						活动范围：破碎群岛 苏拉玛 至高岭<br>
+						历史：<br>
+						自从被暗夜精灵驱逐后就一直四处寻觅一个古老的语言，燃烧军团终有一天会再次降临，一切都会化为灰烬。</DIV>
+						<video src="img/video/1Fstyr.mp4" loop="loop" muted="muted" autoplay="autoplay" playsinline="playsinline"></video>
+					</div>
+				</div>
+				<div id="lich" class='text'>
+					<div class='text3'></div>
+					<div class='text10'>
+						<video src="img/video/1Fstyr.mp4" loop="loop" muted="muted" autoplay="autoplay" playsinline="playsinline"></video>
+						<DIV>巫妖王：阿尔萨斯<br>
+						性格：傲慢 冷漠 藐视一切<br>
+						活动范围：没有规律四处瞎搞<br>
+						历史：<br>
+						曾经的人族王子，为了得到力量拔起来霜之哀伤，但是这一切都是阴谋的开始。不管如何以前他现在奔波在最前线。</DIV>
+						<video src="img/video/1Fstyr.mp4" loop="loop" muted="muted" autoplay="autoplay" playsinline="playsinline"></video>
+					</div>
+
+				</div>
+				<div id="huolong" class='text'>
+					<div class='text4'></div>
+					<div class='text10'>
+						<video src="img/video/1Fstyr.mp4" loop="loop" muted="muted" autoplay="autoplay" playsinline="playsinline"></video>
+						<DIV>耐萨里奥：死亡之翼<br>
+						性格：睿智 沉着冷静<br>
+						活动范围：风暴城<br>
+						历史：<br>
+						曾经的是五位上古守护巨龙之一，大地的守卫者。但是不幸被上古之神恩佐斯的蛊惑，制造了差点毁灭世界的大灾变</DIV>
+						<video src="img/video/1Fstyr.mp4" loop="loop" muted="muted" autoplay="autoplay" playsinline="playsinline"></video>
+					</div>
+
+				</div>
+				<div id="dypx" class='text'>
+					<div class='text5'></div>
+					<div class='text10'>
+						<video src="img/video/1Fstyr.mp4" loop="loop" muted="muted" autoplay="autoplay" playsinline="playsinline"></video>
+						<DIV>加尔鲁什: 地狱咆哮<br>
+						性格：野心勃勃 无所畏惧<br>
+						活动范围：外域<br>
+						历史：<br>
+						前部落酋长,英勇善战。虽然曾经向联盟发动了数次野蛮袭击，但是他也为自己的过失付出了巨大的代价。而今他再次站出来，因为老朋友回来了。
+						</DIV>
+						<video src="img/video/1Fstyr.mp4" loop="loop" muted="muted" autoplay="autoplay" playsinline="playsinline"></video>
+					</div>
+				</div>	
+			</div>
+
+			<div id="zk26">
+					<div >
+						<a href="zhuce.html" target="_blank">
+						<div>加入我们</div>
+						<video src="img/video/1Fstyr.mp4" loop="loop" muted="muted" autoplay="autoplay" playsinline="playsinline" width="100%"></video>
+						</a>
+					</div>
+					<div>
+						<a href="#" >
+						<div >返回顶部</div>
+						<video src="img/video/1Fstyr.mp4" loop="loop" muted="muted" autoplay="autoplay" playsinline="playsinline" width="100%"></video>
+					</a>
+					</div>
+					<div>
+						<a href="jnjs.html" target="_blank">
+						<div >寻找导师</div>
+						<video src="img/video/1Fstyr.mp4" loop="loop" muted="muted" autoplay="autoplay" playsinline="playsinline" width="100%"></video>
+						</a>
+					</div>
+			</div>
+
+	</div>
+	<div id="footer"></div>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/index.js"></script>
+ </body>
+</html>

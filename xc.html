@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>eric</title>
+  <link rel="icon" href="icon/favicon.ico">
+  <style>
+  /*清除边距*/
+	*{margin:0px;}
+	/*背景图片*/
+	#zk1{background-image:url('img/20.jpg');
+		 width:100%;height:1080px;background-size:cover;
+	}
+	/*标题*/
+	#zk2{width:100%;height:40px;background-color:rgba(200,100,50,0.5);line-height:25px;
+	}
+	/*标题选项*/
+	.z1{width:100px;height:40px;
+		font-size:16px;;color:#ffcc33;
+		text-decoration:none;
+	}
+	/*顶部大相框*/
+	#zk4{width:80%;height:200px;background-image:url('img/t010fb9b19997bb8187.jpg');background-size:100% 200px;margin:100px 0px 0px 10%;}
+	/*照片墙选项*/
+	#zk5{width:80%;height:50px;background-color:#ffffff;
+		 margin:0px 0px 0px 10%;
+	}
+	.z2{font-size:30px;line-height:50px;font-family:"华为行楷";color:#0066ff;text-decoration:none;
+	}
+	.z2:hover{
+		border-bottom:2px solid red;
+	}
+	/*照片墙*/
+	#zk6{width:100%;height:600px;margin:0px 0px 0px 10%;}
+	#zk7{width:150px;height:500px;background-color:rgba(0,0,0,0.1);
+		 float:left;margin-top:8px;
+	}
+	#zk8{
+		width:80%;height:700px;float:left;
+	}
+	/*照片列表文字*/
+	#zk8 tr{
+		width:550px;
+		height:250px;
+		
+	}
+	#zk8 td img{
+	transition:transform 5s;
+	}
+	tr:hover img{
+		transform-style:preserve-3D;
+		position:relative;top:-4px;
+		perspective:1100px;
+		transform:rotateY(180deg) translateZ(500px);
+	}
+	.z5{font-size:20px;color:#ff8000;cursor:pointer;}
+	/*图标*/
+	.z6{background-image:url('icon/photo_icon.jpg');background-repeat:no-repeat;position:relative;top:54px;cursor:pointer;}
+  </style>
+ </head>
+ <body>
+ <!--背景图片-->
+	<div id="zk1">
+	<!--第一份大div-->
+		<div id="zk2">
+			<table height="40px" width="600px" align="right">
+			<!--标题首页-->
+				<tr>
+					<td><a href="#" class="z1">
+						<a href="index.html" style="text-decoration:none;color:#ffcc33;">首页</a>
+					</td>
+					<td><a href="xcziwojieshao.html" class="z1">基本信息</td>
+					<td><a href="gerenjl.html" class="z1">以往经历</td>
+					<td><a href="wlzw.html" class="z1">未来展望</td>
+					<td><a href="grxf.html" class="z1">个人想法</td>
+				</tr>
+			</table>
+		</div>
+		<!--第二个大div-->
+		<div id="zk3">
+			<!--大顶部边框-->
+			<div id="zk4">
+			</div>
+		</div>
+		<!--照片墙上边选项-->
+		<div id="zk5" align="center">
+			<table height="50px" width="1000px" align="center">
+				<tr align="center">
+					<td><a href="#" class="z2">风景照片</a></td>
+					<td><a href="#" class="z2">动物照片</a></td>
+					<td><a href="#" class="z2">私人照片</a></td>
+				</tr>
+			</table>
+		</div>
+		<!--照片墙左边选项-->
+		<div id="zk6">
+			<div id="zk7" class="z3">
+				<table align="center" width="150px" height="500px">
+					<tr align="center" valign="middle">
+						<td class="z6" width="20px" height="20px" style="background-position:5px 0px;"></td>
+						<td style="border-bottom:2px solid #e2cdd6;" class="z5" >我的照片</td>
+					</tr>
+					<tr align="center" valign="middle">
+						<td class="z6" width="20px" height="20px" style="background-position:-40px 0px;"></td>
+						<td style="border-bottom:2px solid #e2cdd6;" class="z5">最近上传</td>
+					</tr>
+					<tr align="center" valign="middle">
+						<td class="z6" width="20px" height="20px" style="background-position:-70px 0px;"></td>
+						<td style="border-bottom:2px solid #e2cdd6;" class="z5">我的文件</td>
+					</tr>
+					<tr align="center" valign="middle">
+						<td class="z6" width="20px" height="20px" style="background-position:-115px 0px;"></td>
+						<td class="z5">垃圾箱</td>
+					</tr>
+				</table>
+			</div>
+			<!--照片墙-->
+			<div id="zk8" class="z3">
+				<table style="width:22%;height:600px;float:left;"  cellspacing="6px">
+					<tr>
+						<td>
+							<div class="move">
+							<img src="img/18.jpg" alt="" width="100%" height="250px" class="z4">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/t01268a1ab47d2b0ef7.jpg" alt="" width="100%" height="250px" class="z4">
+						</td>
+					</tr>
+				</table>
+				<table style="float:left;width:22%;height:600px;padding:0px;" cellspacing="6px">
+					<tr>
+						<td>
+							<img src="img/t01c9b4923628c441bf.jpg" alt="" width="100%" height="250px" class="z4">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/aaaaa.jpg" alt="" width="100%" height="250px" class="z4">
+						</td>
+					</tr>
+				</table>
+				<table style="float:left;width:22%;height:600px;" cellspacing="6px">
+					<tr>
+						<td>
+							<img src="img/t010c1df9668a3ff74a.jpg" alt="" width="100%" height="250px" class="z4">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/173902416966.jpg" alt="" width="100%" height="250px" class="z4">
+						</td>
+					</tr>
+				</table>
+				<table style="float:left;width:22%;height:600px;" cellspacing="6px">
+					<tr>
+						<td>
+							<img src="img/timag.jpg" alt="" width="100%" height="250px" class="z4">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/t0117d3ed990b5b8f58.jpg" alt="" width="100%" height="250px" class="z4">
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+ </body>
+</html>

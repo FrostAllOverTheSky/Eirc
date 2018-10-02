@@ -1,0 +1,29 @@
+<?php
+require_once("tongyong.php");
+@$yzm=$_REQUEST["yzm"];
+session_start();
+$code=$_SESSION["code"];
+if($code!=$yzm){
+	die('{"code":-1,"msg":"验证码不正确"}');
+}
+@$u=$_REQUEST["uname"];
+$reg='/^[0-9a-zA-Z_]{3,12}$/i';
+$rs=preg_match($reg,$u);
+if($rs==0){
+	die('{"code":-1,"msg":"用户名不正确"}');
+}
+@$p=$_REQUEST["upwd"];
+$re='/^[0-9a-zA-Z_]{8,12}$/';
+$rs=preg_match($re,$p);
+if($rs==0){
+	die('{"code":-1,"msg":"密码不正确"}');
+}
+$sql="select count(uid) from user where uname='$u' and upwd=md5('$p')";
+$rst=mysqli_query($conn,$sql);
+$row=mysqli_fetch_row($rst);
+if($row[0]=="1"){
+	echo '{"code":1,"msg":"登录成功"}';
+}else{
+	echo '{"code":-1,"msg":"用户名或密码有误"}';
+}
+?>

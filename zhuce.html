@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>eric</title>
+  <link rel="icon" href="icon/favicon.ico">
+  <link rel="stylesheet" href="css/animate.css"/>
+  <style>
+	*{margin:0;}
+	#body{
+			min-width: 1200px;
+			height: 885px;
+			background-image:url('img/5481662d12962.jpg');
+			background-size:cover;
+	}
+	#beijing{
+		min-width: 1200px;
+		position: relative;
+		top:120px;
+		}
+	#zhuce{
+			width:480px;height:400px;color:#ffffff;
+			line-height:50px;margin-left:60%;
+			display:inline-block;vertical-align:middle;
+	}	
+	#tishi{
+		width:20%;height:400px;margin-top:70px;
+		color:#43c1f8;display:inline-block;
+		vertical-align:middle;font-size:10px;
+	}
+	.zg{
+		width: 100px;
+	    text-align: center;
+	    height: 40px;
+	    border-radius:5px ;
+	    font-size: 20px;
+	    line-height: 40px;
+		-webkit-transition: all .5s linear;
+	    -moz-transition: all .5s linear;
+	    transition: all .5s linear;cursor:pointer;
+	}
+	.zc{
+	    color:#406dd4;
+	    border: 1px solid #2186c3;
+	    background-color: #89b1c79c;
+	    
+	
+	}
+	#form1>p:not(:nth-child(7))>label>input{
+		  width: 270px;
+		  height:25px;
+		  background:#82d7ff2e;
+		  color:#fffcd3;
+		  font-size:20px;
+		  border: 1px solid #4ab4ff;
+		  }
+	.cz{		
+	    color:#ff4444e3;
+	    border: 1px solid #2186c3;
+	    background-color: #2a6c7794;
+	    margin-left: 50px;
+	}
+	.zc:hover{
+		border: 1px solid #ffffff;
+	    background-color:#05ff0d;
+	    color:#ffffff;
+	}
+	.cz:hover{
+		border: 1px solid red;
+	    background-color: #ef4f0394;
+	    color:#ffffff;
+	}
+	input.error{
+		-webkit-box-shadow: 2px -2px 2px red;
+		-moz-box-shadow: 2px 2px 2px red;
+		box-shadow:2px -2px 2px red;
+	}
+	label.error{
+		background-image:url(img/err.png);
+		color:red;
+		background-repeat:no-repeat;
+		background-position:left;
+		background-size: 15px 15px;
+		padding-left:25px;
+		margin-left:10px;
+		font-style: italic;
+	}
+	div.error{
+		border: 1px solid red;
+		box-shadow: 0 0 10px red;
+		display:none;
+	}
+	div.error>label.error{
+		display:block;
+		margin-left:1em;
+		color:red;
+		font-style: italic;
+	}
+	
+	label>a{color:#05ff0d}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: #f3f3f3;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: #f3f3f3;
+	}
+	input:-ms-input-placeholder,
+	textarea:-ms-input-placeholder {
+	color: #f3f3f3;
+	}
+	input::-webkit-input-placeholder,
+	textarea::-webkit-input-placeholder {
+		color: #f3f3f3;
+		}
+  </style>
+
+ </head>
+ <body>
+ <div id="header"></div>
+ <div id="body">
+	<div id="beijing">
+		<div id="zhuce">
+			<h2>填写你的信息已完成注册</h2>
+			<form id="form1">
+				
+				<p>
+					<label>
+						<input name="uname" id="uname" placeholder="用户名:" >
+					</label>
+				</p>
+				<p>
+					<label>
+						<input id="upwd1" name="upwd1" type="password" placeholder="密码:">
+					</label>
+				</p>
+				<p>
+					<label>
+						<input name="upwd2" type="password" placeholder="确认密码:">
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="text" name="user_name" id="xm" placeholder="姓名:">
+					</label>
+				</p>
+				<p>
+					<label>
+						<input id="text" name="site" placeholder="所在地址:">
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="text" name="phone" id="mobile" placeholder="手机号:">
+					</label>
+				</p>
+				<p>
+				<label><a href="">请查看相关法律条款并同意</a>
+					同意<input name="agree" type="checkbox">
+				</label>
+				</p>
+				<input type="submit" value="注册" class="zc zg">
+				<input type="reset" class="cz zg";>
+			</form>
+		</div>
+	</div>
+</div>
+<div id="footer" style="background-color:#000"></div>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/header.js"></script>
+    <script src="js/jquery.validate.js"></script>
+	<script src="js/messages_zh.js"></script>		
+	<script src="js/word.js"></script>
+	<script src="js/footer.js"></script>
+ </body>
+</html>

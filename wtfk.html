@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>eric</title>
+  <link rel="icon" href="icon/favicon.ico">
+  <link rel="stylesheet" href="css/animate.css"/>
+	<style>
+		*{margin: 0;}
+	input{
+		width:200px;height:25px;
+		}
+		body{
+			background-image:url('img/11.jpg');
+			background-repeat: no-repeat;
+			background-color: #000;
+			}
+		body>div:first-child{
+		position: relative;
+		
+		width:100%;height: 800px;background-size:cover;
+	}	
+	#beijin{
+		width:70%;margin:0px auto;
+		opacity:0.8;
+	}
+	#shenfen{
+	text-align:right;width:60%;height:200px;
+	color:#24d6ff;font-size:25px;
+	}
+	#beijin h1{
+		text-align:center;color:#dcdcdc;margin-top: 70px;
+	}
+	#fankui{
+		height: 500px;
+		text-align:center;color:#dcdcdc;font-size:25px;
+		}
+	#shenfen{
+		line-height:50px;
+	}
+	textarea{
+	opacity:0.4;
+	}
+	.cz{
+		color: #ffc3c3;
+    	border: 1px solid #dcdcdc;
+    	background-color: #9e5551;
+	}
+	.ti{
+		color: #ffffff;
+    	border: 1px solid #0da3fb;
+    	background-color: #309a16;
+	}
+	</style>
+ </head>
+ <body>
+ 	<div>
+<!--首页  -->
+	<div id="header"></div>
+<!--背景颜色 -->
+	<div id="beijin">
+<!--反馈窗口  -->
+		<h1>信息反馈</h1>
+		<form id="form2">
+			<div id="shenfen">
+				姓名 <input type="text" name="fname">
+				<br>
+				身份 <input type="text" name="fsf">
+				<br>
+				所在地区 <input type="text" name="site">
+				<br>
+				联络方式 <input type="text" name="phone">
+				<br>
+			</div>
+			<div id="fankui">
+				<h4>写出你的意见和问题反馈给我们</h4>
+				<textarea name="jianyi" id="" cols="50" rows="10" style="font-size:30px"></textarea>
+				<br>
+				<input type="reset" class="cz"> 
+				<input type="submit" value="提交" class="ti">
+			</div>
+		</form>
+	</div>
+	<div id="footer" style="margin-top: 198px;"></div>
+	</div>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/wtfk.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/messages_zh.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/header.js"></script>
+ </body>
+</html>

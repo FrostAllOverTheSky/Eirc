@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+    *{
+		margin:0px;
+		color:#3affa4;
+		text-decoration:none;
+	}
+	a{
+		color:#e88709;
+	}	
+	#back{
+		min-width:1200px;
+		width:100%;height:895px;
+		background-image:url("img/512d5f8cb797d.jpg");
+		background-size:100% 900px;
+	}
+	#up{
+		min-width:1200px;
+		width: 88%;
+		height:445px;
+		margin:0px auto;font-size:25px;
+		text-align:left;display: flex;
+		font-family:黑体;	flex-flow: row nowrap;
+		justify-content: space-between;
+		position: relative;
+		top:200px;
+	}
+	#color{
+		line-height:40px;width:400px;
+		height:445px;border:1px solid black;
+		text-indent:20px;
+		background-color:rgba(0,0,0,0.6);
+	}
+	.dl{
+		width:87%;height:40px;
+		font-size:20px;color:#1273ca;
+		padding-left:10px;
+	}
+	#pp{
+		margin-top:40px;overflow:hidden;
+		width:400px;line-height:30px;
+	}
+	.p2{
+		width:300px;height:40px;
+		color:red;font-size:15px;
+		line-height:20px;
+	} 
+	#uname,#pwd{
+	  background:#fff url("img/yhm.png") no-repeat 
+	  97% center;
+	}
+	#pwd{
+	  background-image:url("img/mm.png")
+	}
+	#denglu{
+		width:90%;height:40px;
+		border:1px solid #06ae38;
+		background-color:#32aaeb;
+		font-size:30px;text-align:center;
+		line-height:10px;border-radius:3px;
+		color:#fdf5e8;cursor:pointer;
+	}
+	.yzm{
+		width: 120px;height: 34px;
+		vertical-align: top;
+		color:orangered;
+		font-size:20px;
+	}
+  </style>	
+ </head>
+ <script>
+ 
+ </script>
+ <body>
+ <div id="header"></div>
+  <div id="back">
+	<div id="up">
+			<video src="img/video/videolib-mobile.mp4" width="795" controls="" poster="img//gif/4.gif"></video>
+		<div id="color">
+			<form>
+			 <div width="800px" height="600px">
+			  <p id="pp">
+				登录你的账号<a href="zhuce.html" style="font-size:16px;margin-left:110px;">新用户注册</a>
+			  </p>
+			  <hr width="90%" style="margin:10px 20px;">
+			  <p>
+				<input type="text" name="uname" class="dl" placeholder="请输入用户名:" id="uname">
+			  </p>
+			  <p class="p2" id="un"> 
+			  </p>
+			  <p>
+				<input type="password" name="upwd" class="dl"   placeholder="请输入用户密码:" id="pwd">
+			  </p>
+			  <p class="p2" id="pd">
+			  </p>
+			  <!--新添加功能:验证码             -->
+              <div>
+              <img id="setYzm"  title="看不清点击换一张" src="php/code_gg.php" />
+              <input id="yzm" type="text" class="yzm" placeholder="请输入验证码" required />
+              </div>
+			  <p style="font-size:16px;width:400px;">
+			  <input type="checkbox">自动登录
+			  <span style="margin-left:160px;">
+				<a href="">忘记密码？</a>
+			  </span>
+			  </p>
+			  <p style="margin-top:30px">
+				<input type="submit" value="登录"  id="denglu">
+			  </p>
+		  </div>
+		</form>
+	</div>
+	</div>
+  </div>
+  <div id="footer" style="background-color:#000000;"></div>
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/login.js"></script>
+		<script src="js/footer.js"></script>
+ </body>
+</html>
