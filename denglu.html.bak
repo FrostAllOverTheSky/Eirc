@@ -122,7 +122,6 @@
 <script type="text/javascript">
 	$TN.onsuccess(function(){
 	//验证通过
-	setCookie(name, "", -1);
 	 document.cookie = "ok";
 	});
 </script>
